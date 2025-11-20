@@ -1,0 +1,142 @@
+body {
+  background-color: #ffb702;
+  color: #fdffff;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#user-name {
+    font-size: 22px;
+    border-style: none;
+    vertical-align: middle;
+  }
+
+#result-area {
+  width: 294px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background-color: #7c0ec5;
+  padding:  2px  24px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+
+
+button {
+  color: white;
+  font-weight: bolder;
+  background-color: #7c0ec5;
+  border-style: none;
+  padding: 5px 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+
+
+モックアップを作成する
+HTMLなどを作成する前にデザイン的な見た目を確認するための
+（機能の部分は作り込まれていない）
+モックアップを作成するとよい（Figmaなどのツールを使うと便利）
+┗ 作成するものが事前に整理され、手戻りが少なくなる
+
+
+カラーコード
+  16進数で色を指定する方法
+  RGB の形式で指定
+  R: 赤 (Red)
+  G: 緑 (Green)
+  B: 青 (Blue)
+  00 〜 FF で指定  
+
+margin/padding
+ margin: 要素の外側の余白
+ padding: 要素の内側の余白
+
+
+
+
+
+
+ 
+
+
+let と const
+ let: 何度も代入できる変数
+ const: 再代入ができない変数（定数）
+
+
+ <!--
+チャプター１１
+
+マルチカーソル
+こんな便利な機能があることを初めて知った
+ ctrl + option + ↓ (Mac)
+で複数の行を選択できる
+便利すぎる！
+  
+厳格モード　use strict
+変数の宣言漏れや関数の重複などを防げる
+意図しない挙動をへらして、安全に開発できる
+
+const let var の違い
+var は再宣言、再代入が可能
+let は再代入のみ可能
+const は再宣言、再代入ともに不可能
+なるべく const を使う 
+  
+replaceAll()関数
+replaceAll(置換前の文字列, 置換後の文字列)
+文字列の一部をまとめて置換できる
+  今回の場合は、
+  ###userName### の文字列を入力したユーザーの名前に置換する
+  
+console.assert()関数
+console.assert(1 + 2 === 3, '数値が一致しません。');
+第一引数が false の場合にエラーメッセージを表示する
+テストをするときに使うと便利
+
+
+
+
+チャプター１２
+divタグ
+グループ化するためのタグ
+CSSやJavaScriptで操作しやすくなる
+
+
+イベントリスナー
+addEventListener('イベント名', 関数)
+特定のイベントが発生したときに関数を実行する仕組み
+click イベント
+ボタンがクリックされたときに発生するイベント
+
+
+無名関数
+function() のように
+関数に名前がないもの  
+
+アロー関数
+無名関数のfunction部分を省略して書ける
+() => {  // 処理}
+
+
+ガード句
+return; で早期に関数を終了させる方法
+条件に合わない内容から、処理をガードできる
+
+
+createElement()関数
+タグなどを指定して新しい要素を作成できる
+appendChild()関数と組み合わせて使う
+divなどのタグの中にh3やpタグを追加したりできる
+それらの要素を削除するremoveChild()関数もある
+
+
+
+
