@@ -16,14 +16,27 @@ assessmentButton.addEventListener(
     //診断結果表示エリアの作成
     resultDivision.innerText = '';//診断結果表示エリアの初期化
 
-    const header = document.createElement('h2');
-    header.innerText = 'あなたの診断結果';
-    resultDivision.appendChild(header);//divタグの小要素としてh3タグを追加
+    //hederdivの作成
+    const headerdiv = document.createElement('div');
+    headerdiv.setAttribute('class','card-header mb-3 text-bg-dark bg-gradient bg-opacity-75 fs-3');
+    headerdiv.innerText = 'あなたの診断結果';
 
+    //bodydivの作成
+    const bodydiv = document.createElement('div');
+    bodydiv.setAttribute('class','card-body fs-5');
+
+    //pタグの作成
     const paragraph = document.createElement('p');
+    paragraph.setAttribute('class','card-text');
     const result = assessment(userName);
     paragraph.innerText = result;
-    resultDivision.appendChild(paragraph);//divタグの小要素としてpタグを追加
+    bodydiv.appendChild(paragraph);
+
+    //結果表示
+    resultDivision.setAttribute('class','card bg-dark mt-3 mb-3 bg-gradient bg-opacity-25 text-white');
+    resultDivision.appendChild(headerdiv);//divタグの小要素としてh3タグを追加
+    resultDivision.appendChild(bodydiv);//divタグの小要素としてpタグを追加
+
 
 
     //X投稿エリアの作成
