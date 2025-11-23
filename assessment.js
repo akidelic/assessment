@@ -18,12 +18,12 @@ assessmentButton.addEventListener(
 
     //hederdivの作成
     const headerdiv = document.createElement('div');
-    headerdiv.setAttribute('class','card-header mb-3 text-bg-dark bg-gradient bg-opacity-75 fs-3');
+    headerdiv.setAttribute('class','card-header text-bg-dark bg-gradient bg-opacity-75 fs-3');
     headerdiv.innerText = 'あなたの診断結果';
 
     //bodydivの作成
     const bodydiv = document.createElement('div');
-    bodydiv.setAttribute('class','card-body fs-5');
+    bodydiv.setAttribute('class','card-body fs-3');
 
     //pタグの作成
     const paragraph = document.createElement('p');
